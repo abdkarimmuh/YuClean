@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YuClean</string>
+
+    <string-array name="provinsi">
+        <item>Jawa Barat</item>
+        <item>Jawa Timur</item>
+        <item>Jawa Tengah</item>
+    </string-array>
+
+    <string name="about1">
+        YuClean adalah aplikasi berbasis web dan mobile untuk membantu manajemen bank sampah.
+    </string>
+    <string name="about2">
+        Memudahkan transaksi nasabah Memudahkan mengetahui saldo tabungan dan penarikannya Memudahkan untuk menjadi bank sampah.
+    </string>
+    <string name="about3">
+        Aplikasi ini adalah aplikasi management bank sampah yang dapat digunakan untuk memudahkan kita menjalankan program bank sampah, mengetahui lokasi bank sampah, mempublikasi kegiatan, dan memasarkan hasil kerajinan bank sampah.
+    </string>
+</resources>

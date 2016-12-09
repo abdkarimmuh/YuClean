@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40px"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_yuclean_bgwhite"
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp">
+
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="Provinsi"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <Spinner
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:layout_marginLeft="80dp"
+                        android:id="@+id/spinner_list_Provinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:entries="@array/provinsi"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kabupaten/Kota"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <Spinner
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/spinner_list_Kabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kecamatan"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <Spinner
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:layout_marginLeft="60dp"
+                        android:id="@+id/spinner_list_Kecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kelurahan"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <Spinner
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/spinner_list_Kelurahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+
+
+                    <EditText
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/edit_txtRt"
+                        android:hint="RT"
+                        android:textSize="17dp"
+                        android:background="@android:drawable/editbox_background_normal"/>
+
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/edit_txtRw"
+                        android:hint="RW"
+                        android:textSize="17dp"
+                        android:background="@android:drawable/editbox_background_normal"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnRegistrasi"
+                    android:layout_marginTop="20dp"
+                    android:text="REGISTRASI"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="#FFF"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
